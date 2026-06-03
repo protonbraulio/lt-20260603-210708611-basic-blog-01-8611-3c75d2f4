@@ -1,0 +1,24 @@
+---
+import "../styles/search.css";
+
+import Container from "../components/layouts/Container.astro";
+import PageTitle from "../components/ui/PageTitle.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PagefindSearch from "astro-pagefind/components/Search";
+---
+
+<BaseLayout
+    title="Search"
+    description="Search articles and projects from Basic Blog Load Test 01 20260603-210708611."
+    ogImage="https://lt-20260603-210708611-basic-blog-01-8611-3c75d2f4.pages.dev/images/og-default.svg"
+>
+    <Container class="py-12">
+        <PageTitle title="Search" />
+
+        <PagefindSearch
+            id="search"
+            className="pagefind-ui"
+            uiOptions={{ showSubResults: true, autofocus: true }}
+        />
+    </Container>
+</BaseLayout>

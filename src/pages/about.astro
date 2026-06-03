@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+import Container from "../components/layouts/Container.astro";
+import PageTitle from "../components/ui/PageTitle.astro";
+import SocialLinks from "../components/ui/SocialLinks.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Prose from "../components/content/Prose.astro";
+
+const [about] = await getCollection("about");
+
+const { Content } = await render(about);
+---
+
+<BaseLayout
+    title={about.data.title}
+    description={about.data.description}
+    ogImage="https://lt-20260603-210708611-basic-blog-01-8611-3c75d2f4.pages.dev/images/og-default.svg"
+>
+    <Container class="mx-auto max-w-4xl py-12">
+        <PageTitle title="About" />
+
+        <Prose class:list={"mt-16"}>
+            <Content />
+        </Prose>
+
+        <div class="mt-12 px-4 sm:px-6 md:px-0">
+            <h2 class="text-2xl font-bold">Find this site elsewhere</h2>
+            <p class="mt-2 text-gray-700 dark:text-gray-300">
+                You can find me on the following platforms.
+            </p>
+
+            <SocialLinks class="mt-6" appearance={"chip"} />
+        </div>
+    </Container>
+</BaseLayout>

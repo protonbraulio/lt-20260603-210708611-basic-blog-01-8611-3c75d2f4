@@ -1,0 +1,31 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+  maxDepth?: number;
+  minHeadings?: number;
+  title?: string;
+}
+
+const { headings, maxDepth = 3, minHeadings = 4, title = 'Table of contents' } = Astro.props;
+const visibleHeadings = headings.filter((heading) => heading.depth >= 2 && heading.depth <= maxDepth);
+const hasInlineTableOfContents = visibleHeadings.some(
+  (heading) => heading.slug === 'table-of-contents' || heading.text.trim().toLowerCase() === 'table of contents',
+);
+
+if (hasInlineTableOfContents || visibleHeadings.length < minHeadings) {
+  return null;
+}
+---
+
+<aside class="table-of-contents" aria-label="Table of contents">
+  <p class="table-of-contents__title">{title}</p>
+  <ol>
+    {visibleHeadings.map((heading) => (
+      <li data-depth={heading.depth}>
+        <a href={`#${heading.slug}`}>{heading.text}</a>
+      </li>
+    ))}
+  </ol>
+</aside>

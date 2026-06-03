@@ -1,0 +1,87 @@
+---
+import Container from "../components/layouts/Container.astro";
+import Button from "../components/ui/button/Button.astro";
+import { InputField, TextArea } from "../components/ui/form";
+import Link from "../components/ui/link/Link.astro";
+import PageTitle from "../components/ui/PageTitle.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with Basic Blog Load Test 01 20260603-210708611."
+  ogImage="https://lt-20260603-210708611-basic-blog-01-8611-3c75d2f4.pages.dev/images/og-default.svg"
+>
+  <Container class="mx-auto max-w-2xl py-12">
+    <PageTitle title="Get in Touch" />
+
+    <form method="POST" action="#">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div>
+          <label for="name" class="block text-sm leading-6 font-semibold">
+            Name
+          </label>
+          <div class="mt-2.5">
+            <InputField
+              name="name"
+              placeholder="Your Name"
+              required
+              maxlength="100"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm leading-6 font-semibold">
+            Email
+          </label>
+          <div class="mt-2.5">
+            <InputField
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              maxlength="254"
+              autocomplete="email"
+              autocapitalize="off"
+              spellcheck="false"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <label for="message" class="block text-sm leading-6 font-semibold">
+          Message
+        </label>
+        <div class="mt-2.5">
+          <TextArea
+            name="message"
+            required
+            maxlength="5000"
+            rows="4"
+            placeholder="How can I help?"
+          />
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-gray-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-gray-300">
+        This starter ships with the original contact form design, but you still need to connect your own backend or email provider before production use.
+      </div>
+
+      <div class="mt-4 flex justify-center">
+        <div class="max-w-xl text-center text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+          By sending the form you agree to the
+          <Link href="/terms"> Terms &amp; Conditions </Link>
+          and
+          <Link href="/privacy-policy"> Privacy Policy </Link>
+          .
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <Button type="submit" class="w-full">Send</Button>
+      </div>
+    </form>
+  </Container>
+</BaseLayout>

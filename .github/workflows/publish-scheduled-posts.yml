@@ -1,0 +1,41 @@
+name: Publish scheduled posts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Publish due posts
+        run: node scripts/publish-scheduled-posts.mjs
+
+      - name: Commit published posts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "No scheduled posts due."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add staxio/publishing.queue.json staxio/publishing.history.json src
+          git commit -m "chore: publish scheduled posts"
+          git push
+          gh workflow run deploy.yml --ref "$(git branch --show-current)"

@@ -1,0 +1,23 @@
+---
+import { getEntry, render } from "astro:content";
+import Container from "../components/layouts/Container.astro";
+import PageTitle from "../components/ui/PageTitle.astro";
+import Prose from "../components/content/Prose.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const entry = await getEntry("legal", "privacy-policy");
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  ogImage={entry.data.ogImage?.src}
+>
+  <Container class="mx-auto max-w-4xl py-12">
+    <PageTitle title="Privacy Policy" />
+    <Prose class:list={"mt-16"}>
+      <Content />
+    </Prose>
+  </Container>
+</BaseLayout>

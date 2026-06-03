@@ -1,0 +1,14 @@
+---
+import Button from "../ui/button/Button.astro";
+import { cn } from "../../utils/styles";
+
+interface Props {
+  class?: string;
+}
+
+const { class: cls = "" } = Astro.props;
+---
+
+<Button href="/newsletter" class={cn("items-center gap-2", cls)}>
+  Get new posts by email
+</Button>

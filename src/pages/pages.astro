@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import ListLayout from "../layouts/ListLayout.astro";
+import { attachMeta } from "../utils/meta";
+
+const pages = (await getCollection("projects", ({ data }) => data.draft !== true && data.pubDate <= new Date()))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .map((p) => attachMeta(p));
+---
+
+<ListLayout
+    title="Pages"
+    description="A collection of pages from Basic Blog Load Test 01 20260603-210708611."
+    ogImage="https://lt-20260603-210708611-basic-blog-01-8611-3c75d2f4.pages.dev/images/og-default.svg"
+    entries={pages}
+/>

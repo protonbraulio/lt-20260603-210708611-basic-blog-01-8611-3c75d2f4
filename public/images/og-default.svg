@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F3F7FB"/>
+  <rect x="72" y="72" width="1056" height="486" rx="32" fill="#fff" stroke="#D8E3F0" stroke-width="4"/>
+  <text x="132" y="188" fill="#2563EB" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">BASIC BLOG</text>
+  <text x="132" y="288" fill="#111827" font-size="76" font-family="Inter, Arial, sans-serif" font-weight="800">Basic Blog Load Test 01 20260603-210708611</text>
+  <text x="132" y="360" fill="#475569" font-size="30" font-family="Inter, Arial, sans-serif">Real staging load test batch 20260603-210708611 for Basic Blog.</text>
+  <rect x="132" y="426" width="248" height="18" rx="9" fill="#F59E0B" fill-opacity=".4"/>
+  <rect x="132" y="470" width="190" height="18" rx="9" fill="#2563EB" fill-opacity=".24"/>
+</svg>

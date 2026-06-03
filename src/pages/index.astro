@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+import Container from "../components/layouts/Container.astro";
+import ContentGrid from "../components/layouts/sections/ContentGrid.astro";
+import FeaturedContent from "../components/layouts/sections/FeaturedContent.astro";
+import EmptyState from "../components/ui/EmptyState.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_SETTINGS } from "../site.config";
+import { attachMeta } from "../utils/meta";
+
+const allPosts = await getCollection("blog", ({ data }) => data.draft !== true && data.pubDate <= new Date());
+const allProjects = await getCollection("projects", ({ data }) => data.draft !== true && data.pubDate <= new Date());
+
+const sortedPosts = allPosts.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const sortedProjects = allProjects.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const latestPosts = sortedPosts.slice(0, 3).map((post) => attachMeta(post));
+const latestProjects = sortedProjects
+    .slice(0, 2)
+    .map((project) => attachMeta(project));
+
+const featured = [...allPosts, ...allProjects]
+    .filter((item) => item.data.featured !== undefined)
+    .sort((a, b) => (a.data.featured ?? 0) - (b.data.featured ?? 0));
+
+const hasContent =
+    featured.length > 0 || latestPosts.length > 0 || latestProjects.length > 0;
+---
+
+<BaseLayout
+    title={SITE_SETTINGS.title}
+    description={SITE_SETTINGS.description}
+>
+    <Container class="space-y-24 py-12">
+        {
+            hasContent ? (
+                <>
+                    {featured.length > 0 && (
+                        <FeaturedContent items={featured} />
+                    )}
+
+                    {latestPosts.length > 0 && (
+                        <ContentGrid
+                            title="Latest Posts"
+                            href="/blog"
+                            viewAllText="View all posts →"
+                            items={latestPosts}
+                        />
+                    )}
+
+                    {latestProjects.length > 0 && (
+                        <ContentGrid
+                            title="Latest Projects"
+                            href="/projects"
+                            viewAllText="View all projects →"
+                            items={latestProjects}
+                            class="grid grid-cols-1 gap-8 md:grid-cols-2"
+                        />
+                    )}
+                </>
+            ) : (
+                <EmptyState
+                    title="Nothing here yet..."
+                    message="Check back soon for new items!"
+                />
+            )
+        }
+    </Container>
+</BaseLayout>

@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "schedule": {
+    "cron": "17 * * * *",
+    "timezone": "UTC"
+  },
+  "publishing": {
+    "maxPostsPerRun": 1,
+    "publishWindowMinutes": 75
+  },
+  "content": {
+    "collections": [
+      {
+        "name": "blog",
+        "directory": "src/content/blog",
+        "dateField": "pubDate",
+        "examplePostPath": "src/content/blog/example-scheduled-post.md"
+      }
+    ]
+  }
+}

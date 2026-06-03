@@ -1,0 +1,65 @@
+---
+import { isCloudinaryUrl, lqip } from "../../utils/cloudinary";
+import { cn } from "../../utils/styles";
+
+interface Props {
+  src: string;
+  alt: string;
+  wrapperClass?: string;
+  imageClass?: string;
+  loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+  width?: number;
+  height?: number;
+}
+
+const {
+  src,
+  alt,
+  wrapperClass = "",
+  imageClass = "",
+  loading = "lazy",
+  fetchpriority,
+  width,
+  height,
+  ...rest
+} = Astro.props;
+
+const lqipUrl = isCloudinaryUrl(src) ? lqip(src) : undefined;
+---
+
+<div
+  class={cn(
+    "relative overflow-hidden bg-neutral-200 dark:bg-neutral-700",
+    wrapperClass,
+  )}
+>
+  {
+    lqipUrl && (
+      <img
+        data-pagefind-ignore
+        src={lqipUrl}
+        alt=""
+        aria-hidden="true"
+        class={cn(
+          "absolute inset-0 h-full w-full scale-105 object-cover blur-xl",
+          imageClass,
+        )}
+        loading="eager"
+        decoding="async"
+      />
+    )
+  }
+
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    class={cn("relative h-full w-full object-cover", imageClass)}
+    loading={loading}
+    fetchpriority={fetchpriority}
+    decoding="async"
+    {...rest}
+  />
+</div>

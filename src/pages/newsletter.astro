@@ -1,0 +1,21 @@
+---
+import NewsletterForm from "../components/forms/NewsletterForm.astro";
+import Container from "../components/layouts/Container.astro";
+import PageTitle from "../components/ui/PageTitle.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Newsletter"
+  description="Subscribe to Basic Blog Load Test 01 20260603-210708611 for new posts and project updates."
+  ogImage="https://lt-20260603-210708611-basic-blog-01-8611-3c75d2f4.pages.dev/images/og-default.svg"
+>
+  <Container class="mx-auto max-w-2xl py-12">
+    <PageTitle title="Newsletter" />
+    <NewsletterForm
+      variant="inline"
+      showLegal={true}
+      turnstileClass="flex justify-center"
+    />
+  </Container>
+</BaseLayout>

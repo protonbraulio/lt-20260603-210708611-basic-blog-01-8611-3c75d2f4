@@ -1,0 +1,156 @@
+---
+import "../styles/global.css";
+
+import { SITE_SETTINGS } from "../site.config";
+
+import SkipLinkBtn from "../components/ui/SkipLinkBtn.astro";
+import ScrollToTop from "../components/ui/ScrollToTop.astro";
+import Header from "../components/layouts/Header.astro";
+import Footer from "../components/layouts/Footer.astro";
+
+interface Props {
+    title: string;
+    description?: string;
+    ogImage?: string;
+}
+
+const {
+    title = SITE_SETTINGS.title,
+    description = SITE_SETTINGS.description,
+    ogImage = SITE_SETTINGS.ogImages,
+} = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalURL} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        {
+            ogImage && (
+                <meta
+                    property="og:image"
+                    content={new URL(ogImage, Astro.url)}
+                />
+            )
+        }
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        {
+            ogImage && (
+                <meta
+                    name="twitter:image"
+                    content={new URL(ogImage, Astro.url)}
+                />
+            )
+        }
+
+        <link rel="sitemap" href={new URL("sitemap-index.xml", Astro.site)} />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="RSS"
+            href={new URL("rss.xml", Astro.site)}
+        />
+
+        <script is:inline>
+            try {
+                const stored = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+                const isDark = stored ? stored === "dark" : prefersDark;
+                document.documentElement.classList.toggle("dark", isDark);
+            } catch {}
+        </script>
+        <script src="../utils/overlay.ts"></script>
+    <img data-staxio-analytics="crawler" src="https://staxio-analytics-worker.braulio-patricio.workers.dev/crawler.gif?accountId=31a03e74-1639-45b6-bfa7-77447f1a4762&amp;projectId=lt-20260603-210708611-basic-blog-01-8611-3c75d2f4&amp;provider=github_pages&amp;publicSiteToken=v2.PKxNWnzYCfRyvdGNwwEybtqS1IZW0STsJNYI1RzTMRQ&amp;siteId=3c75d2f4-6da6-44cd-b35e-2ba6e7cc2d25&amp;templateId=basic-blog" alt="" width="1" height="1" loading="eager" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;" />
+<script data-staxio-analytics="site">
+(() => {
+  const config = {"accountId":"31a03e74-1639-45b6-bfa7-77447f1a4762","endpoint":"https://staxio-analytics-worker.braulio-patricio.workers.dev/event","projectId":"lt-20260603-210708611-basic-blog-01-8611-3c75d2f4","provider":"github_pages","publicSiteToken":"v2.PKxNWnzYCfRyvdGNwwEybtqS1IZW0STsJNYI1RzTMRQ","siteId":"3c75d2f4-6da6-44cd-b35e-2ba6e7cc2d25","templateId":"basic-blog"};
+  window.STAXIO_ANALYTICS = config;
+  const send = (event, extra = {}) => {
+    const payload = {
+      ...config,
+      event,
+      href: window.location.href,
+      path: window.location.pathname,
+      referrer: document.referrer || undefined,
+      ...extra,
+    };
+    const body = JSON.stringify(payload);
+    if (navigator.sendBeacon) {
+      const blob = new Blob([body], { type: 'application/json' });
+      if (navigator.sendBeacon(config.endpoint, blob)) return;
+    }
+    fetch(config.endpoint, {
+      method: 'POST',
+      body,
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'omit',
+      keepalive: true,
+    }).catch(() => {});
+  };
+  send('pageview');
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    const tracked = target?.closest('[data-staxio-event]');
+    if (tracked) {
+      send(String(tracked.getAttribute('data-staxio-event') || 'cta_click'), {
+        label: tracked.getAttribute('data-staxio-label') || tracked.textContent?.trim().slice(0, 120) || undefined,
+      });
+      return;
+    }
+    const link = target?.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const url = new URL(href, window.location.href);
+    if (url.origin !== window.location.origin) {
+      send('outbound_link_click', { href: url.href, label: link.textContent?.trim().slice(0, 120) || undefined });
+    }
+  });
+  document.addEventListener('submit', (event) => {
+    const form = event.target instanceof HTMLFormElement ? event.target : null;
+    if (form) send('form_submit', { label: form.getAttribute('name') || form.getAttribute('aria-label') || undefined });
+  });
+})();
+</script>
+</head>
+
+    <body
+        class="bg-white text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50"
+    >
+        <SkipLinkBtn />
+
+        <Header />
+
+        <main id="main" class="min-h-[calc(100vh-12rem)]">
+            <slot />
+        </main>
+
+        <Footer />
+
+        <div
+            id="overlay"
+            class="pointer-events-none invisible fixed inset-0 z-40 bg-black/50 opacity-0 transition-all duration-500"
+        >
+        </div>
+
+        <ScrollToTop />
+    </body>
+</html>
