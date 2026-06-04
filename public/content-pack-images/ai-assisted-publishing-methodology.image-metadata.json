@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "ai-assisted-publishing-methodology",
+  "kind": "page",
+  "title": "AI-assisted Publishing Methodology",
+  "alt": "AI-assisted Publishing Methodology",
+  "description": "Explain how Basic Blog Load Test 01 20260603-210708611 evaluates and structures AI-assisted publishing. Key entities: AI-assisted Publishing Methodology.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-methodology.svg",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-methodology.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-methodology.png",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-methodology.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/ai-assisted-publishing-methodology.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-methodology.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

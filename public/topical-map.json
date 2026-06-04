@@ -1,0 +1,302 @@
+{
+  "version": "1",
+  "siteName": "Basic Blog Load Test 01 20260603-210708611",
+  "packType": "starter_topical_pack",
+  "homepageRole": "pillar",
+  "mainTopic": "AI-assisted publishing",
+  "primaryEntityId": "ai-assisted-publishing",
+  "nodes": [
+    {
+      "nodeId": "homepage",
+      "kind": "page",
+      "pageType": "homepage_pillar",
+      "title": "AI-assisted Publishing Guide",
+      "slug": "ai-assisted-publishing-guide",
+      "description": "Explain the core principles of AI-assisted publishing for operations managers building repeatable pipelines in Melbourne.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing"
+      ],
+      "incomingNodeIds": [
+        "workflow",
+        "best-practices",
+        "faq",
+        "glossary",
+        "checklist",
+        "methodology"
+      ],
+      "outgoingNodeIds": [
+        "workflow",
+        "best-practices",
+        "faq",
+        "glossary",
+        "checklist",
+        "methodology"
+      ]
+    },
+    {
+      "nodeId": "workflow",
+      "kind": "page",
+      "pageType": "supporting_page",
+      "title": "AI-assisted Publishing Workflow",
+      "slug": "ai-assisted-publishing-workflow",
+      "description": "Show a practical workflow for operations managers building repeatable pipelines adopting AI-assisted publishing in Melbourne.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-workflow"
+      ],
+      "incomingNodeIds": [
+        "homepage",
+        "best-practices"
+      ],
+      "outgoingNodeIds": [
+        "homepage",
+        "best-practices"
+      ]
+    },
+    {
+      "nodeId": "best-practices",
+      "kind": "page",
+      "pageType": "supporting_page",
+      "title": "AI-assisted Publishing Best Practices",
+      "slug": "ai-assisted-publishing-best-practices",
+      "description": "Document implementation best practices, common mistakes, and success signals for AI-assisted publishing.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-best-practices"
+      ],
+      "incomingNodeIds": [
+        "homepage",
+        "workflow"
+      ],
+      "outgoingNodeIds": [
+        "homepage",
+        "workflow"
+      ]
+    },
+    {
+      "nodeId": "faq",
+      "kind": "page",
+      "pageType": "faq_page",
+      "title": "AI-assisted Publishing FAQ",
+      "slug": "ai-assisted-publishing-faq",
+      "description": "Answer common questions about AI-assisted publishing for operations managers building repeatable pipelines.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-faq"
+      ],
+      "incomingNodeIds": [
+        "homepage"
+      ],
+      "outgoingNodeIds": [
+        "homepage"
+      ]
+    },
+    {
+      "nodeId": "glossary",
+      "kind": "page",
+      "pageType": "glossary_page",
+      "title": "AI-assisted Publishing Glossary",
+      "slug": "ai-assisted-publishing-glossary",
+      "description": "Define the core concepts, terms, and entities around AI-assisted publishing.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-glossary"
+      ],
+      "incomingNodeIds": [
+        "homepage"
+      ],
+      "outgoingNodeIds": [
+        "homepage"
+      ]
+    },
+    {
+      "nodeId": "checklist",
+      "kind": "page",
+      "pageType": "checklist_page",
+      "title": "AI-assisted Publishing Checklist",
+      "slug": "ai-assisted-publishing-checklist",
+      "description": "Provide a practical implementation checklist for AI-assisted publishing.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-checklist"
+      ],
+      "incomingNodeIds": [
+        "homepage"
+      ],
+      "outgoingNodeIds": [
+        "homepage"
+      ]
+    },
+    {
+      "nodeId": "methodology",
+      "kind": "page",
+      "pageType": "methodology_page",
+      "title": "AI-assisted Publishing Methodology",
+      "slug": "ai-assisted-publishing-methodology",
+      "description": "Explain how Basic Blog Load Test 01 20260603-210708611 evaluates and structures AI-assisted publishing.",
+      "required": true,
+      "entityIds": [
+        "ai-assisted-publishing-methodology"
+      ],
+      "incomingNodeIds": [
+        "homepage"
+      ],
+      "outgoingNodeIds": [
+        "homepage"
+      ]
+    },
+    {
+      "nodeId": "basics",
+      "kind": "post",
+      "title": "AI-assisted Publishing Basics for B2b SaaS Operators",
+      "slug": "ai-assisted-publishing-basics-b2b-saas-operators",
+      "description": "Introduce AI-assisted publishing in a concise editorial format for operations managers building repeatable pipelines.",
+      "entityIds": [],
+      "incomingNodeIds": [],
+      "outgoingNodeIds": []
+    },
+    {
+      "nodeId": "mistakes",
+      "kind": "post",
+      "title": "Common AI-assisted Publishing Mistakes for Operations Managers Building Repeatable Pipelines",
+      "slug": "common-ai-assisted-publishing-mistakes",
+      "description": "Turn repeated pitfalls into an actionable checklist for operations managers building repeatable pipelines.",
+      "entityIds": [],
+      "incomingNodeIds": [],
+      "outgoingNodeIds": []
+    },
+    {
+      "nodeId": "launch-checklist",
+      "kind": "post",
+      "title": "AI-assisted Publishing Launch Checklist",
+      "slug": "ai-assisted-publishing-launch-checklist",
+      "description": "Provide a deployment-ready checklist tied to Basic Blog Load Test 01 20260603-210708611.",
+      "entityIds": [],
+      "incomingNodeIds": [],
+      "outgoingNodeIds": []
+    }
+  ],
+  "entities": [
+    {
+      "entityId": "ai-assisted-publishing",
+      "label": "AI-assisted Publishing",
+      "entityType": "topic",
+      "slug": "ai-assisted-publishing",
+      "description": "Primary entity for AI-assisted publishing.",
+      "sourcePageIds": [
+        "homepage"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-workflow",
+      "label": "AI-assisted Publishing Workflow",
+      "entityType": "subtopic",
+      "slug": "ai-assisted-publishing-workflow",
+      "description": "Show a practical workflow for operations managers building repeatable pipelines adopting AI-assisted publishing in Melbourne.",
+      "sourcePageIds": [
+        "workflow"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-best-practices",
+      "label": "AI-assisted Publishing Best Practices",
+      "entityType": "subtopic",
+      "slug": "ai-assisted-publishing-best-practices",
+      "description": "Document implementation best practices, common mistakes, and success signals for AI-assisted publishing.",
+      "sourcePageIds": [
+        "best-practices"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-faq",
+      "label": "AI-assisted Publishing FAQ",
+      "entityType": "subtopic",
+      "slug": "ai-assisted-publishing-faq",
+      "description": "Answer common questions about AI-assisted publishing for operations managers building repeatable pipelines.",
+      "sourcePageIds": [
+        "faq"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-glossary",
+      "label": "AI-assisted Publishing Glossary",
+      "entityType": "term",
+      "slug": "ai-assisted-publishing-glossary",
+      "description": "Define the core concepts, terms, and entities around AI-assisted publishing.",
+      "sourcePageIds": [
+        "glossary"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-checklist",
+      "label": "AI-assisted Publishing Checklist",
+      "entityType": "subtopic",
+      "slug": "ai-assisted-publishing-checklist",
+      "description": "Provide a practical implementation checklist for AI-assisted publishing.",
+      "sourcePageIds": [
+        "checklist"
+      ]
+    },
+    {
+      "entityId": "ai-assisted-publishing-methodology",
+      "label": "AI-assisted Publishing Methodology",
+      "entityType": "subtopic",
+      "slug": "ai-assisted-publishing-methodology",
+      "description": "Explain how Basic Blog Load Test 01 20260603-210708611 evaluates and structures AI-assisted publishing.",
+      "sourcePageIds": [
+        "methodology"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "ai-assisted-publishing-workflow",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "supports",
+      "sourcePageIds": [
+        "workflow"
+      ]
+    },
+    {
+      "from": "ai-assisted-publishing-best-practices",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "supports",
+      "sourcePageIds": [
+        "best-practices"
+      ]
+    },
+    {
+      "from": "ai-assisted-publishing-faq",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "supports",
+      "sourcePageIds": [
+        "faq"
+      ]
+    },
+    {
+      "from": "ai-assisted-publishing-glossary",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "defines",
+      "sourcePageIds": [
+        "glossary"
+      ]
+    },
+    {
+      "from": "ai-assisted-publishing-checklist",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "supports",
+      "sourcePageIds": [
+        "checklist"
+      ]
+    },
+    {
+      "from": "ai-assisted-publishing-methodology",
+      "to": "ai-assisted-publishing",
+      "relationshipType": "supports",
+      "sourcePageIds": [
+        "methodology"
+      ]
+    }
+  ]
+}

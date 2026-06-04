@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "title": "AI-assisted Publishing Workflow",
+    "href": "/projects/ai-assisted-publishing-workflow"
+  },
+  {
+    "title": "AI-assisted Publishing Best Practices",
+    "href": "/projects/ai-assisted-publishing-best-practices"
+  },
+  {
+    "title": "AI-assisted Publishing FAQ",
+    "href": "/projects/ai-assisted-publishing-faq"
+  },
+  {
+    "title": "AI-assisted Publishing Glossary",
+    "href": "/projects/ai-assisted-publishing-glossary"
+  },
+  {
+    "title": "AI-assisted Publishing Checklist",
+    "href": "/projects/ai-assisted-publishing-checklist"
+  },
+  {
+    "title": "AI-assisted Publishing Methodology",
+    "href": "/projects/ai-assisted-publishing-methodology"
+  }
+]

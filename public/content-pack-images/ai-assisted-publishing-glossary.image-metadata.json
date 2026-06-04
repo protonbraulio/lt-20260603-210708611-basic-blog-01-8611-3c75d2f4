@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "ai-assisted-publishing-glossary",
+  "kind": "page",
+  "title": "AI-assisted Publishing Glossary",
+  "alt": "AI-assisted Publishing Glossary",
+  "description": "Define the core concepts, terms, and entities around AI-assisted publishing. Key entities: AI-assisted Publishing Glossary.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-glossary.svg",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-glossary.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-glossary.png",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-glossary.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/ai-assisted-publishing-glossary.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-glossary.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

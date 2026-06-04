@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "ai-assisted-publishing-faq",
+  "kind": "page",
+  "title": "AI-assisted Publishing FAQ",
+  "alt": "AI-assisted Publishing FAQ",
+  "description": "Answer common questions about AI-assisted publishing for operations managers building repeatable pipelines. Key entities: AI-assisted Publishing FAQ.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-faq.svg",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-faq.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-faq.png",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-faq.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/ai-assisted-publishing-faq.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-faq.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

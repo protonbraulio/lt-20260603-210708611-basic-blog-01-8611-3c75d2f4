@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "ai-assisted-publishing-basics-b2b-saas-operators",
+  "kind": "post",
+  "title": "AI-assisted Publishing Basics for B2b SaaS Operators",
+  "alt": "AI-assisted Publishing Basics for B2b SaaS Operators",
+  "description": "Introduce AI-assisted publishing in a concise editorial format for operations managers building repeatable pipelines. Related entities: AI-assisted Publishing Workflow, AI-assisted Publishing Best Practices.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.svg",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.png",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-basics-b2b-saas-operators.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

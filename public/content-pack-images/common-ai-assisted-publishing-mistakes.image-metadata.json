@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "common-ai-assisted-publishing-mistakes",
+  "kind": "post",
+  "title": "Common AI-assisted Publishing Mistakes for Operations Managers Building Repeatable Pipelines",
+  "alt": "Common AI-assisted Publishing Mistakes for Operations Managers Building Repeatable Pipelines",
+  "description": "Turn repeated pitfalls into an actionable checklist for operations managers building repeatable pipelines. Related entities: AI-assisted Publishing Best Practices, AI-assisted Publishing FAQ.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/common-ai-assisted-publishing-mistakes.svg",
+    "assetPath": "public/content-pack-images/common-ai-assisted-publishing-mistakes.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/common-ai-assisted-publishing-mistakes.png",
+    "assetPath": "public/content-pack-images/common-ai-assisted-publishing-mistakes.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/common-ai-assisted-publishing-mistakes.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/common-ai-assisted-publishing-mistakes.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": "1",
+  "slug": "ai-assisted-publishing-workflow",
+  "kind": "page",
+  "title": "AI-assisted Publishing Workflow",
+  "alt": "AI-assisted Publishing Workflow",
+  "description": "Show a practical workflow for operations managers building repeatable pipelines adopting AI-assisted publishing in Melbourne. Key entities: AI-assisted Publishing Workflow.",
+  "fallbackImage": {
+    "format": "svg",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-workflow.svg",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-workflow.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "socialImage": {
+    "preferredFormat": "png",
+    "href": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-workflow.png",
+    "assetPath": "public/content-pack-images/ai-assisted-publishing-workflow.png",
+    "width": 1200,
+    "height": 630,
+    "status": "specified",
+    "xmpSidecarPath": "public/content-pack-images/ai-assisted-publishing-workflow.png.xmp"
+  },
+  "metadata": {
+    "creator": "Basic Blog Load Test 01 20260603-210708611",
+    "credit": "Basic Blog Load Test 01 20260603-210708611",
+    "copyrightNotice": "Copyright 2026 Basic Blog Load Test 01 20260603-210708611",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "acquisitionUrl": "https://protonbraulio.github.io/lt-20260603-210708611-basic-blog-01-8611-3c75d2f4/content-pack-images/ai-assisted-publishing-workflow.svg",
+    "aiDisclosure": "Deterministic content-pack image generated from page/post metadata; no provider image model was used."
+  }
+}

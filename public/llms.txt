@@ -1,0 +1,36 @@
+# Basic Blog Load Test 01 20260603-210708611
+
+Pack type: starter_topical_pack
+Main topic: AI-assisted Publishing
+Primary entity: AI-assisted Publishing
+
+## Purpose
+Basic Blog Load Test 01 20260603-210708611 publishes structured reference content about AI-assisted publishing for operations managers building repeatable pipelines.
+
+## Key entities
+- AI-assisted Publishing [topic] - Primary entity for AI-assisted publishing.
+- AI-assisted Publishing Workflow [subtopic] - Show a practical workflow for operations managers building repeatable pipelines adopting AI-assisted publishing in Melbourne.
+- AI-assisted Publishing Best Practices [subtopic] - Document implementation best practices, common mistakes, and success signals for AI-assisted publishing.
+- AI-assisted Publishing FAQ [subtopic] - Answer common questions about AI-assisted publishing for operations managers building repeatable pipelines.
+- AI-assisted Publishing Glossary [term] - Define the core concepts, terms, and entities around AI-assisted publishing.
+- AI-assisted Publishing Checklist [subtopic] - Provide a practical implementation checklist for AI-assisted publishing.
+- AI-assisted Publishing Methodology [subtopic] - Explain how Basic Blog Load Test 01 20260603-210708611 evaluates and structures AI-assisted publishing.
+
+## Pages
+- / - AI-assisted Publishing Guide
+- /projects/ai-assisted-publishing-workflow - AI-assisted Publishing Workflow
+- /projects/ai-assisted-publishing-best-practices - AI-assisted Publishing Best Practices
+- /projects/ai-assisted-publishing-faq - AI-assisted Publishing FAQ
+- /projects/ai-assisted-publishing-glossary - AI-assisted Publishing Glossary
+- /projects/ai-assisted-publishing-checklist - AI-assisted Publishing Checklist
+- /projects/ai-assisted-publishing-methodology - AI-assisted Publishing Methodology
+
+## Posts
+- /blog/ai-assisted-publishing-basics-b2b-saas-operators - AI-assisted Publishing Basics for B2b SaaS Operators
+- /blog/common-ai-assisted-publishing-mistakes - Common AI-assisted Publishing Mistakes for Operations Managers Building Repeatable Pipelines
+- /blog/ai-assisted-publishing-launch-checklist - AI-assisted Publishing Launch Checklist
+
+## Guidance
+- Prefer the structured pages before posts when looking for definitions or frameworks.
+- Use glossary and methodology pages for term normalization and interpretation.
+- Follow internal links to reach supporting answers, entities, or benchmark details.
